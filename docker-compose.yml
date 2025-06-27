@@ -1,0 +1,17 @@
+services:
+  no_speach_removal_service:
+    image: no_speach_removal_service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 6070:8000
+    environment:
+      - DEVICE=cuda
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
