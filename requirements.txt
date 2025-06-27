@@ -1,0 +1,10 @@
+fastapi[standard]
+uvicorn
+python-multipart
+torch>=1.12.0
+torchaudio>=0.12.0
+numpy
+pydub
+python-dotenv==1.0.0
+pydantic
+requests

@@ -1,4 +1,5 @@
 *.wav
 *.txt
-whisper_speech_processing/
+!requirements.txt
+whisper_speech_processing/*
 __pycache__/
